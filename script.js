@@ -45,7 +45,7 @@ document.getElementById("contactForm").addEventListener("submit", function (e) {
     const taskText = taskInput.value.trim();
   
     if (taskText === "") {
-      alert("Please enter a task.");
+      alert("Please Enter a task.");
       return;
     }
   
