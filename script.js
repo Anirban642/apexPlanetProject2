@@ -39,4 +39,31 @@ document.getElementById("contactForm").addEventListener("submit", function (e) {
     alert("Form submitted successfully!");
     this.reset();
   });
+
+  document.getElementById("addTaskBtn").addEventListener("click", function () {
+    const taskInput = document.getElementById("taskInput");
+    const taskText = taskInput.value.trim();
+  
+    if (taskText === "") {
+      alert("Please enter a task.");
+      return;
+    }
+  
+    const listItem = document.createElement("li");
+    listItem.textContent = taskText;
+  
+    const deleteBtn = document.createElement("button");
+    deleteBtn.textContent = "Delete";
+    deleteBtn.classList.add("delete-btn");
+  
+    deleteBtn.addEventListener("click", function () {
+      listItem.remove();
+    });
+  
+    listItem.appendChild(deleteBtn);
+    document.getElementById("taskList").appendChild(listItem);
+  
+    taskInput.value = "";
+  });
+  
   

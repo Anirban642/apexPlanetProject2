@@ -13,30 +13,29 @@
 
   <main>
     <section class="form-section">
-        <form id="contactForm">
-            <h2>Contact Form</h2>
-          
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required />
-          
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required />
-          
-            <label for="phone">Phone Number:</label>
-            <input type="text" id="phone" name="phone" required />
-          
-            <label>Gender:</label>
-            <input type="radio" id="male" name="gender" value="Male" />
-            <label for="male" style="display: inline;">Male</label>
-            <input type="radio" id="female" name="gender" value="Female" />
-            <label for="female" style="display: inline;">Female</label>
-          
-            <label for="dob">Date of Birth:</label>
-            <input type="date" id="dob" name="dob" required />
-          
-            <input type="submit" value="Submit" />
-          </form>
-          
+      <form id="contactForm">
+        <h2>Contact Form</h2>
+
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required />
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="phone">Phone Number:</label>
+        <input type="text" id="phone" name="phone" required />
+
+        <label>Gender:</label>
+        <input type="radio" id="male" name="gender" value="Male" />
+        <label for="male" style="display: inline;">Male</label>
+        <input type="radio" id="female" name="gender" value="Female" />
+        <label for="female" style="display: inline;">Female</label>
+
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob" required />
+
+        <input type="submit" value="Submit" />
+      </form>
     </section>
 
     <section class="layout-section">
@@ -57,13 +56,12 @@
           <p>Modern Architecture</p>
         </div>
       </div>
-         
     </section>
 
     <section class="todo-section">
       <h2>To-Do List</h2>
       <input type="text" id="taskInput" placeholder="Add a new task" />
-      <button onclick="addTask()">Add</button>
+      <button id="addTaskBtn">Add</button>
       <ul id="taskList"></ul>
     </section>
   </main>
