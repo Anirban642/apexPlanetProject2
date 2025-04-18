@@ -1,0 +1,221 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  /* Header and Footer */
+  header, footer {
+    background-color: #007bff;
+    color: white;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  main {
+    padding: 20px;
+  }
+  
+  /* Form Section */
+  form {
+    background-color: #fff;
+    padding: 20px;
+    max-width: 500px;
+    margin: 0 auto 40px auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  }
+  
+  label {
+    display: block;
+    margin-top: 15px;
+    font-weight: bold;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"],
+  input[type="date"] {
+    width: 100%;
+    padding: 12px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+  }
+  
+  input[type="submit"] {
+    background-color: #28a745;
+    color: white;
+    padding: 12px 20px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #218838;
+    transform: scale(1.05);
+  }
+  
+  /* Navigation Links Hover */
+  nav a {
+    text-decoration: none;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  nav a:hover {
+    background-color: #0056b3;
+    transform: scale(1.1);
+  }
+  
+  /* Layout Section */
+  .layout-section {
+    margin: 40px 0;
+  }
+  
+  nav {
+    background-color: #343a40;
+    color: white;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 6px;
+    text-align: center;
+  }
+  
+  .content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+  }
+  
+  .box {
+    background-color: #ffffff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    flex-grow: 1;
+    transition: transform 0.3s ease;
+  }
+  
+  .box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  }
+  
+  .box img:hover {
+    transform: scale(1.1);
+  }
+  
+  .box p {
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    padding: 10px;
+    margin: 0;
+    text-align: center;
+    font-weight: bold;
+  }
+  
+  /* To-do List Section */
+  .todo-section {
+    max-width: 500px;
+    margin: 40px auto 0 auto;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  }
+  
+  .todo-section h2 {
+    margin-bottom: 15px;
+    text-align: center;
+  }
+  
+  .todo-section input[type="text"] {
+    width: 70%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+  }
+  
+  .todo-section button {
+    padding: 10px 15px;
+    margin-left: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .todo-section button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+  }
+  
+  .todo-section ul {
+    margin-top: 20px;
+    list-style-type: none;
+  }
+  
+  .todo-section li {
+    background-color: #f1f1f1;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 6px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .todo-section li button {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .todo-section li button:hover {
+    background-color: #e60000;
+    transform: scale(1.05);
+  }
+  
+  /* Responsive Media Queries */
+  @media (max-width: 600px) {
+    .todo-section input[type="text"] {
+      width: 100%;
+      margin-bottom: 10px;
+    }
+  
+    .todo-section button {
+      width: 100%;
+      margin-left: 0;
+    }
+  }
+  

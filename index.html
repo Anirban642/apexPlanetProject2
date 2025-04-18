@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Apex Planet Project 2</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Contact Us</h1>
+  </header>
+
+  <main>
+    <section class="form-section">
+        <form id="contactForm">
+            <h2>Contact Form</h2>
+          
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required />
+          
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required />
+          
+            <label for="phone">Phone Number:</label>
+            <input type="text" id="phone" name="phone" required />
+          
+            <label>Gender:</label>
+            <input type="radio" id="male" name="gender" value="Male" />
+            <label for="male" style="display: inline;">Male</label>
+            <input type="radio" id="female" name="gender" value="Female" />
+            <label for="female" style="display: inline;">Female</label>
+          
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob" required />
+          
+            <input type="submit" value="Submit" />
+          </form>
+          
+    </section>
+
+    <section class="layout-section">
+      <nav>
+        <p>Navigation Area</p>
+      </nav>
+      <div class="content">
+        <div class="box">
+          <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=400&q=80" alt="Nature" />
+          <p>Beautiful Nature</p>
+        </div>
+        <div class="box">
+          <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=400&q=80" alt="Technology" />
+          <p>Innovative Technology</p>
+        </div>
+        <div class="box">
+          <img src="https://images.unsplash.com/photo-1491553895911-0055eca6402d?auto=format&fit=crop&w=400&q=80" alt="Architecture" />
+          <p>Modern Architecture</p>
+        </div>
+      </div>
+         
+    </section>
+
+    <section class="todo-section">
+      <h2>To-Do List</h2>
+      <input type="text" id="taskInput" placeholder="Add a new task" />
+      <button onclick="addTask()">Add</button>
+      <ul id="taskList"></ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Apex Planet</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
